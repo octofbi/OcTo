@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIDS BLACK List ACC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 20px;
+            color: #fff;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 2em;
+            animation: colorChange 1s infinite alternate;
+        }
+        @keyframes colorChange {
+            0% { color: #0000ff; }
+            100% { color: #4b0082; }
+        }
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .search-container input {
+            padding: 10px;
+            width: 300px;
+            border-radius: 5px;
+            border: none;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .account {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 150px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        .account:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .account img {
+            width: 100%;
+            height: 150px;
+            object-fit: contain;
+            background-color: #0000ff;
+        }
+        .account-name {
+            padding: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .description {
+            display: none;
+            background-color: #fff;
+            color: #333;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Ownd By OcTo</h1>
+    </div>
+    <div class="search-container">
+        <input type="text" id="search" placeholder=" search PSN aids - البحث عن اسم الحساب" onkeyup="filterAccounts()">
+    </div>
+    <div class="container" id="account-container">
+        <!-- حسابات جديدة في الأعلى -->
+        <div class="account" data-name="OXJ" data-description="PSN: OXJ 
+OGMAIL :dc@eynsham.com
+OG name: John crozier
+CC: 4658-0086
+dob: 8/11/1972
+security question answer: tiffany
+Serial: 02274366233719126
+Old info to psn account Johncrozier700@outlook.com" onclick="showDescription(this)">
+            <img src="https://i.ibb.co/TPK99Rz/IMG-4045.png" alt="PSN Logo">
+            <div class="account-name">OXJ</div>
+        </div>
+        <div class="account" data-name="Oain" data-description="Oain🇺🇸
+oge email: kaintos@yahoo.com
+og dob: 24/08/2001
+cc: 4610&2948
+tid: 488427091289
+tid: 488381734472
+
+PSN: lc_wq@outlook.com Oain" onclick="showDescription(this)">
+            <img src="https://logos-world.net/wp-content/uploads/2020/11/PlayStation-Logo.png" alt="PSN Logo">
+            <div class="account-name">Oain</div>        
+        </div>
+        <div class="account" data-name="jguv" data-description="jguv
+Mazanalshamry@gmail.com
+order id : 786580507085076
+ملغم " onclick="showDescription(this)">
+            <img src="https://logos-world.net/wp-content/uploads/2020/11/PlayStation-Logo.png" alt="PSN Logo">
+            <div class="account-name">jguv</div>
+        </div>
+        <!-- بقية الحسابات -->
+        <div class="account" data-name="SAR🇫🇷" data-description="❌مسروق SAR" onclick="showDescription(this)">
+            <img src="https://i.ibb.co/TPK99Rz/IMG-4045.png" alt="PSN Logo">
+            <div class="account-name">SAR</div>
+        </div>
+        <div class="account" data-name="prjf" data-description="❌مسروق prjf" onclick="showDescription(this)">
+            <img src="https://i.ibb.co/TPK99Rz/IMG-4045.png" alt="PSN Logo">
+            <div class="account-name">prjf</div>
+        </div>
+        <div class="account" data-name="YRH3" data-description="YRH3 🇺🇸
+serial : MB09675694
+OGE: YRH333@yahoo.com
+OGE PW: xru2T4frgQjTtSy" onclick="showDescription(this)">
+            <img src="https://logos-world.net/wp-content/uploads/2020/11/PlayStation-Logo.png" alt="PSN Logo">
+            <div class="account-name">YRH3</div>
+        </div>
+        <div class="account" data-name="lyW" data-description="hartlash2kar@gmail.com
+مسروق
+ملغم" onclick="showDescription(this)">
+            <img src="https://i.ibb.co/TPK99Rz/IMG-4045.png" alt="PSN Logo">
+            <div class="account-name">lyW</div>
+        </div>
+        <div class="account" data-name="I-j" data-description=" ❌مسروق ❌i-j" onclick="showDescription(this)">
+            <img src="https://i.ibb.co/TPK99Rz/IMG-4045.png" alt="PSN Logo">
+            <div class="account-name">I-j</div>
+        </div>
+        <div class="account" data-name="FQZD" data-description="OID- FQZD 🇺🇸
+OG EMAIL ACCESS
+uvmelzh@hotmail.com
+OG REAL-NAME: Meshal Abdulrahman
+01-01-1990   
+
+TID:786699424445254
+MC 5108****4029： $1.49
+
+Date Purchased: 07/13/2024
+786699424445254 Product Purchase 261626925141 1 149 USD  
+2024-07-13 UNCHARTED 2: Among Thieves™️ UNCHARTED Avatar Pack 6 Violence Web 786699375328966 Product Purchase 261600581333
+EXTRA TIDS : 786701939707910
+MW3 $38.49" onclick="showDescription(this)">
+            <img src="https://logos-world.net/wp-content/uploads/2020/11/PlayStation-Logo.png" alt="PSN Logo">
+            <div class="account-name">FQZD</div>
+        </div>
+        <div class="account" data-name="Qwx-" data-description="God" onclick="showDescription(this)">
+            <img src="https://logos-world.net/wp-content/uploads/2020/11/PlayStation-Logo.png" alt="PSN Logo">
+            <div class="account-name">Qwx-</div>
+        </div>
+        <div class="account" data-name="PDX" data-description="ID: PDX 🇺🇸
+OGE: the5est@comcast.net
+Og name : Forest Tribys-Colombi
+Address: 209 MEREDITH DR, Newberg Oregon, 97132
+VISA : 4867xxxxxxxx1805
+MC(5262xxxxxxxx2220)
+DOB : 04/25/04" onclick="showDescription(this)">
+            <img src="https://logos-world.net/wp-content/uploads/2020/11/PlayStation-Logo.png" alt="PSN Logo">
+            <div class="account-name">PDX</div>
+        </div>
+        <div class="account" data-name="PSN 2023" data-description="- 4804341155
+DO- : Spka54v9@utopia.ocn.ne.jp
+xKx : Kdma77@hotmail.com (bust) 
+ty9 : tyler_penny93@hotmail.com - Tyler Penitch
+dmar : dallas_marley@hotmail.com backup dallas_marley@yahoo.com : backup: dallas.marley@ttu.edu    806-392-7954
+AID : accountusver@yahoo.co.jp 
+CruSh : ma.ownspace@hotmail.com
+PYY : pedro_yung@hotmail.com
+ND7 : kewellandy7@hotmail.com - Andy Wong
+IHH : hdzisrael@hotmail.com - Israel Hdz.
+ZZZ_ : alcoholic69@gmail.com - Alan Conzett
+q80 : hakbar@kuwaitenergy.com.kw (maybe og email)
+NorthKorea : Kangerz_@hotmail.com
+cdc : cdcrave@msn.com - Christopher Craven
+TAKEN : hoehoe66@acint.jp ( I FAILED AND BOUGHT THIS DOMAIN )
+BLUNTS : vertgo242@insightbb.com
+hu- : okanomado@ybb.ne.jp
+horrible : pmhorrocks@mac.com
+ORW : tasuku987649@yahoo.co.jp
+ 
+DRP : daniel.porter@au.harveynorman.com
+Tension : diablo@sztybers.com
+SIX : sixxpack@gmail.com
+DEMONS : paitan@m6.gyao.ne.jp
+Ravens : psmitheagle1@gmail.com
+FR_ : fede.blanco@hotmail.com
+singer : mlkjforbis@yahoo.com
+AW- : slick@live.fr
+af- : 4/29/1987 --> pkarraf87@gmail.com 
+GRS : gsmith802003@yahoo.com
+Gby : gby.tyyppi@dnainternet.net
+BitCoin : dcgumb@gmail.com
+THREATS : mightypoop209@yahoo.com
+vzw : deastin52@att.net / acc number 89143526  
+Mexico : jsobel@usfca.edu (not on a psn)
+FFF : spiderman669@gmail.com
+Dyo : w0304684@selu.edu
+dyd : vincenzoresta@gmail.com
+Edy : eetu.siikanen@hotmail.com
+SiK : aftershock1525@yahoo.com 5705614696 Brandan Glover
+fax : franske13@pandora.be
+NorthernPride707 : thomasbaldwin@yahoo.com
+snap : tharquin@yahoo.com
+LOD : paoneltelo@googlemail.com
+B13 : brl011@latech.edu 
+eff : fruity_pretty_trick@yahoo.com
+Burgers : burgers@f2s.com
+gavin : gavinroach@yahoo.com 
+QATAR : bluesq6r@hotmail.com (og email?) 
+Default : Arnoldzgreat@yahoo.com / (713)-725-7217
+X-4 : kengou76@yahoo.co.jp
+Cook : twyan1@yahoo.com
+KFA : travispezzera@gmail.com
+Pak : Fybtq811@ybb.ne.jp
+BBB : victim@wmail.plala.or.jp 
+book : book@yahoo.co.jp
+iij : iij515@yahoo.co.jp
+saudi : ash3ary@gmail.com" onclick="showDescription(this)">
+            <img src="https://logos-world.net/wp-content/uploads/2020/11/PlayStation-Logo.png" alt="PSN Logo">
+            <div class="account-name">PSN 2024</div>
+        </div>
+        <div class="account" data-name="umxm" data-description="umxm" onclick="showDescription(this)">
+            <img src="https://logos-world.net/wp-content/uploads/2020/11/PlayStation-Logo.png" alt="PSN Logo">
+            <div class="account-name">umxm</div>
+        </div>
+        <!-- أضف باقي الحسابات هنا بنفس الطريقة -->
+    </div>
+    <div id="description" class="description"></div>
+    
+    <script>
+        function filterAccounts() {
+            const searchValue = document.getElementById('search').value.toLowerCase();
+            const accounts = document.querySelectorAll('.account');
+
+            accounts.forEach(account => {
+                const name = account.getAttribute('data-name').toLowerCase();
+                if (name.includes(searchValue)) {
+                    account.style.display = 'block';
+                } else {
+                    account.style.display = 'none';
+                }
+            });
+        }
+
+        function showDescription(account) {
+            const descriptionText = account.getAttribute('data-description');
+            const description = document.getElementById('description');
+            description.innerText = descriptionText;
+            description.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
